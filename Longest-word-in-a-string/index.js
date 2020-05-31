@@ -14,3 +14,13 @@ function findLongestWord(str) {
 }
 
 alert(`The longest word is-  ${findLongestWord(string)}`);
+
+/*Using sort
+
+function findLongestWord(str) {
+  let longestWord = str.split(" ").sort(function (a, b) {
+    return b.length - a.length;
+  });
+
+  return longestWord[0];
+} */
