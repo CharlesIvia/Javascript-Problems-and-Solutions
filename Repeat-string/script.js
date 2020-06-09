@@ -11,3 +11,11 @@ let repeatStringNTimes = (string, times) => {
 };
 
 console.log(repeatStringNTimes("chuck", 3));
+
+//2. Usinf ES6 repeat method
+
+let repeatStringNumTimes = (string, times) => {
+  return times > 0 ? string.repeat(times) : "";
+};
+
+console.log(repeatStringNumTimes("Rhodes", 4));
