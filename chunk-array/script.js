@@ -1,3 +1,5 @@
+//Using a while loop
+
 let chunkedArray = (arr, size) => {
   let chunkyArray = [];
   let index = 0;
