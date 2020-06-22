@@ -1,5 +1,7 @@
 //Using a for loop
 
+const { Hash } = require("crypto");
+
 const fibonacci = function (count) {
   if (count < 0) return "OOPS";
   if (count == 0) return 0;
@@ -39,4 +41,15 @@ function fibonacciThree(num) {
   if (num <= 1) return 1;
 
   return fibonacciThree(num - 1) + fibonacciThree(num - 2);
+}
+
+//Optimized recursion
+
+function fibonacciFour(num, memo) {
+  memo = memo || {};
+
+  if (memo[num]) return memo[num];
+  if (num <= 1) return 1;
+
+  return (memo[num] = fibonacciFour(num - 1, memo) + fibonacciFour(num - 2, memo));
 }
