@@ -15,3 +15,20 @@ const fibonacci = function (count) {
 
   return b;
 };
+
+//Using while loop
+
+const fibonacciTwo = function (num) {
+  let a = 1,
+    b = 0;
+  temp;
+
+  while (num >= 0) {
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
+};
