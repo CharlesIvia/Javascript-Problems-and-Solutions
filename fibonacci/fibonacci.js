@@ -32,3 +32,11 @@ const fibonacciTwo = function (num) {
 
   return b;
 };
+
+//Using recursion
+
+function fibonacciThree(num) {
+  if (num <= 1) return 1;
+
+  return fibonacciThree(num - 1) + fibonacciThree(num - 2);
+}
