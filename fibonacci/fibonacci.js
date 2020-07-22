@@ -18,6 +18,7 @@ const fibonacci = function (count) {
   return b;
 };
 
+
 //Using while loop
 
 const fibonacciTwo = function (num) {
@@ -51,5 +52,6 @@ function fibonacciFour(num, memo) {
   if (memo[num]) return memo[num];
   if (num <= 1) return 1;
 
-  return (memo[num] = fibonacciFour(num - 1, memo) + fibonacciFour(num - 2, memo));
+  return (memo[num] =
+    fibonacciFour(num - 1, memo) + fibonacciFour(num - 2, memo));
 }
